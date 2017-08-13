@@ -1,0 +1,92 @@
+/*fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+/*header */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background: green;
+    min-height: 50px;
+        
+    position: relative;
+}
+nav.navbar-navigation {
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+        position: relative;
+}
+.menu-button {
+    display: none;
+}
+.navbar-header a {
+    display: block;
+    height: 50px;
+}
+.navbar-header a img {
+    height: 50px;
+}
+ul.navbar-list {
+    display: flex;
+    min-height: 50px;
+}
+ul.navbar-list li.active a {
+    background: #000;
+}
+ul.navbar-list li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+ul.navbar-list li a:hover {
+    background: #000;
+}
+
+@media (max-width:768px){
+    header {
+    padding: 10px 0px;
+}
+    .navbar-collapse {
+    display: none;
+}
+.menu-button {
+    padding: 10px 10px;
+     display: block;
+    background: #fff;
+}
+.menu-button:hover {
+    background: #000;
+}
+.menu-button:hover > i {
+    color: #fff;
+}
+ul.navbar-list li a {
+    padding: 20px 20px;
+}
+ul.navbar-list {
+    display: block;
+    min-height: auto;
+}
+.navbar-collapse {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0px;
+    background: green;
+    margin-top: 10px;
+}
+.container-fluid {
+    padding: 0px;
+}
+nav.navbar-navigation {
+    padding: 0px 15px;
+}
+
+
+}
