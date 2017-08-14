@@ -6,10 +6,13 @@ $(function(){
         if($(event.target).is(x)){
             console.log('prem');
             event.preventDefault();
-            $('.navbar-collapse').slideToggle(500);
+            $('body').toggleClass('push-body');
+            $('.navbar-collapse').toggleClass("push");
+            
         }
         else{
-            $('.navbar-collapse').slideUp(500);
+            $('.navbar-collapse').removeClass("push");
+            $('body').removeClass('push-body');
         }
     });
         $('.navbar-collapse').click(function(e) { //button click class name is myDiv
